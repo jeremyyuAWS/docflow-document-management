@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+  }
+  
+  input[type="date"],
+  input[type="time"],
+  input[type="text"],
+  textarea {
+    @apply block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-black text-white hover:bg-gray-800 rounded-lg transition-colors;
+  }
+  
+  .input-field {
+    @apply block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500;
+  }
+
+  .chart-container {
+    @apply w-full h-full min-h-[200px];
+  }
+}
